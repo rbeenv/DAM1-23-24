@@ -1,0 +1,82 @@
+Subnetting:
+
+192.168.0.15/28
+
+11111111.11111111.11111111.11110000
+
+15 -> 00001111
+
+Dirección de Red: 192.168.0.0
+Dirección de Broadcast: 192.168.0.15
+NºEquipos: 2^(32-28)-2= 14
+Primera IP: 192.168.0.1
+Última IP: 192.168.0.14
+
+/////////////////////////////////////
+
+10.22.36.120/22
+
+11111111.11111111.00100100.00000000
+
+36 -> 00100100
+120 -> 01111000
+
+Dirección de Red: 10.22.36.0
+Dirección de Broadcast: 10.22.39.255
+NºEquipos: 2^(36-22)-2= 16.382
+Primera IP: 10.22.36.1
+Ultima IP: 10.22.39.254
+
+/////////////////////////////////////
+
+192.168.55.4/25
+
+11111111.11111111.11111111.0s0000000
+
+4 -> 00000100
+
+Dirección de Red: 192.168.55.0
+Dirección de Broadcast: 192.168.55.127
+NºEquipos: 2^(32-25)-2= 126
+Primera IP: 192.168.55.1
+Última IP: 192.168.55.126
+
+/////////////////////////////////////
+
+172.20.16.80/15
+
+11111111.11111110.00000000.00000000
+
+20 -> 00010100
+
+Dirección de Red: 172.20.0.0
+Dirección de Broadcast: 172.21.255.255
+NºEquipos: 2^(32-15)-2= 131.070
+Primera IP: 172.20.0.1
+Última IP: 172.21.255.254
+
+/////////////////////////////////////
+
+EJERCICIO SUBNETTING:
+
+1. Distribuye las IPs en una empresa con 60 pcs por departamento y 4 departamentos. 
+
+Indica la IP de red, broadcast,primera IP disponible y ultima IP. Utiliza una red de clase C.Tener en cuenta que cada departamento deberá estar en una subred distinta.
+
+-> Depto 1: 192.0.0.0/26
+
+IP de Red: 192.0.0.0
+IP Broadcast: 192.0.0.63
+NºEquipos: 2^(32-26)-2= 62
+Primera IP: 192.0.0.1
+Última IP: 192.0.0.62
+
+-> Depto 2: 192.1.0.0/26
+
+IP de Red: 192.1.0.0
+IP Broadcast: 192.1.0.63
+NºEquipos: 2^(32-26)-2= 62
+Primera IP: 192.1.0.1
+Última IP: 192.1.0.62
+
+Lo mismo para Depto 3, Depto 4.
